@@ -1,0 +1,7 @@
+- name: Configure GitLab and PostgreSQL
+  hosts: all
+  roles:
+    - common
+    - bdd
+    - gitlab
+

@@ -1,0 +1,16 @@
+- name: Update and upgrade packages
+  apt:
+    update_cache: yes
+    upgrade: dist
+- name: Install required packages
+  apt:
+    name:
+      - vim
+      - git
+      - wget
+      - curl
+      - apt-transport-https
+      - net-tools
+      - dnsutils
+    state: present
+
